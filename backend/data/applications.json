@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1778738598664,
+    "applicationName": "hello",
+    "owner": "M",
+    "backupStatus": true,
+    "monitoringStatus": true,
+    "readiness": "Ready"
+  },
+  {
+    "id": 1778738807011,
+    "applicationName": "HR Payroll",
+    "owner": "Admin Team",
+    "backupStatus": true,
+    "monitoringStatus": true,
+    "readiness": "Ready"
+  }
+]

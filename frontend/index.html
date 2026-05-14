@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Secure Cloud Migration System
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- SIDEBAR -->
+
+        <div class="sidebar">
+
+            <h2>
+                Cloud System
+            </h2>
+
+            <a href="#">
+                Dashboard
+            </a>
+
+            <a href="#">
+                Incidents
+            </a>
+
+            <a href="#">
+                Reports
+            </a>
+
+            <a href="#">
+                Governance
+            </a>
+
+        </div>
+
+        <!-- MAIN CONTENT -->
+
+        <div class="main-content">
+
+            <h1>
+                Secure Cloud Migration Dashboard
+            </h1>
+
+            <!-- METRIC CARDS -->
+
+            <div class="cards">
+
+                <div class="metric-card">
+
+                    <h3>
+                        Total Apps
+                    </h3>
+
+                    <p id="totalApps">
+                        0
+                    </p>
+
+                </div>
+
+                <div class="metric-card">
+
+                    <h3>
+                        Ready Apps
+                    </h3>
+
+                    <p id="readyApps">
+                        0
+                    </p>
+
+                </div>
+
+                <div class="metric-card">
+
+                    <h3>
+                        Blocked Apps
+                    </h3>
+
+                    <p id="blockedApps">
+                        0
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- READINESS BAR -->
+
+            <div class="readiness-section">
+
+                <h2>
+                    Migration Readiness Score
+                </h2>
+
+                <div class="progress-container">
+
+                    <div
+                        class="progress-bar"
+                        id="progressBar"
+                    >
+                        0%
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- FORM -->
+
+            <div class="form-container">
+
+                <input
+                    type="text"
+                    id="appName"
+                    placeholder="Application Name"
+                >
+
+                <input
+                    type="text"
+                    id="owner"
+                    placeholder="Owner"
+                >
+
+                <select id="dataSensitivity">
+
+                    <option value="Public">
+                        Public
+                    </option>
+
+                    <option value="Internal">
+                        Internal
+                    </option>
+
+                    <option value="Confidential">
+                        Confidential
+                    </option>
+
+                </select>
+
+                <input
+                    type="number"
+                    id="dependencies"
+                    placeholder="Dependencies Count"
+                >
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="backupStatus"
+                        checked
+                    >
+
+                    Backup Enabled
+
+                </label>
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="monitoringStatus"
+                        checked
+                    >
+
+                    Monitoring Enabled
+
+                </label>
+
+                <button onclick="addApplication()">
+
+                    Add Application
+
+                </button>
+
+            </div>
+
+            <!-- APPLICATIONS -->
+
+            <div id="applications">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

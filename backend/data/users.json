@@ -1,0 +1,14 @@
+[
+  {
+    "username": "submitter",
+    "role": "Submitter"
+  },
+  {
+    "username": "reviewer",
+    "role": "Reviewer"
+  },
+  {
+    "username": "admin",
+    "role": "Admin"
+  }
+]
